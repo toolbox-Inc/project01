@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2025035A185717A30085D04D /* voice-recorder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20250359185717A20085D04D /* voice-recorder.jpg */; };
+		2025035C185719C40085D04D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2025035B185719C40085D04D /* AVFoundation.framework */; };
 		2067E7C01855C101002B753E /* UtilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067E7BF1855C101002B753E /* UtilitiesViewController.m */; };
 		20A651EE1824139D0060973E /* Coordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A651ED1824139D0060973E /* Coordinates.m */; };
 		20AE197F182C429E00750092 /* target 29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE1979182C429E00750092 /* target 29x29.png */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20250359185717A20085D04D /* voice-recorder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "voice-recorder.jpg"; path = "../../voice-recorder.jpg"; sourceTree = "<group>"; };
+		2025035B185719C40085D04D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2067E7BE1855C101002B753E /* UtilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilitiesViewController.h; sourceTree = "<group>"; };
 		2067E7BF1855C101002B753E /* UtilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilitiesViewController.m; sourceTree = "<group>"; };
 		20A651EC1824139D0060973E /* Coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coordinates.h; path = ../Coordinates.h; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2025035C185719C40085D04D /* AVFoundation.framework in Frameworks */,
 				20AE198C183226AE00750092 /* CoreLocation.framework in Frameworks */,
 				20AE198A183226A100750092 /* MapKit.framework in Frameworks */,
 				20DF7A901823CA8A00889114 /* CoreGraphics.framework in Frameworks */,
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				20AE1978182C426500750092 /* target 120x120.png */,
+				20250359185717A20085D04D /* voice-recorder.jpg */,
 				20AE1979182C429E00750092 /* target 29x29.png */,
 				20AE197A182C429E00750092 /* target 40x40.png */,
 				20AE197B182C429E00750092 /* target 58x58.png */,
@@ -167,6 +173,7 @@
 		20DF7A8C1823CA8A00889114 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2025035B185719C40085D04D /* AVFoundation.framework */,
 				20AE198B183226AE00750092 /* CoreLocation.framework */,
 				20AE1989183226A100750092 /* MapKit.framework */,
 				20DF7A8D1823CA8A00889114 /* Foundation.framework */,
@@ -317,6 +324,7 @@
 				20AE1984182C429E00750092 /* target 152x152.png in Resources */,
 				20AE1983182C429E00750092 /* target 80x80.png in Resources */,
 				20DF7AB11823CA8A00889114 /* Images.xcassets in Resources */,
+				2025035A185717A30085D04D /* voice-recorder.jpg in Resources */,
 				20AE1981182C429E00750092 /* target 58x58.png in Resources */,
 				20DF7AA31823CA8A00889114 /* Main_iPhone.storyboard in Resources */,
 				20DF7A9A1823CA8A00889114 /* InfoPlist.strings in Resources */,

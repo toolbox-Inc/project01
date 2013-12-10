@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface UtilitiesViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface UtilitiesViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVAudioRecorderDelegate, AVAudioPlayerDelegate>
 
 @property (nonatomic, strong) UIImagePickerController *picker;
 
@@ -19,9 +20,15 @@
 
 - (IBAction)camera:(UIButton *)sender;
 
-- (IBAction)voiceMemo:(UIButton *)sender;
-
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)recordMemo:(UIButton *)sender;
+- (IBAction)stopRecord:(UIButton *)sender;
+- (IBAction)playMemo:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+
 
 @end
