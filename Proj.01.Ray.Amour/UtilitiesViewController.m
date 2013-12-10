@@ -8,6 +8,7 @@
 
 #import "UtilitiesViewController.h"
 
+
 @interface UtilitiesViewController ()
 
 
@@ -46,7 +47,15 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     
     self.image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    [self.imageView setImage:self.image];
+    
+    NSData *dataObj = [[NSData alloc]init];
+    
+    dataObj = UIImagePNGRepresentation([info objectForKey:UIImagePickerControllerOriginalImage]);
+    
+    NSLog(@"%@",dataObj);
+    
+    
+    [self.imageView setImage:[UIImage imageWithData:dataObj]];
     
     [self dismissViewControllerAnimated:YES completion:NULL];
     
@@ -99,12 +108,61 @@
 
 
 - (IBAction)recordMemo:(UIButton *)sender {
+    
+    NSError *error = [[NSError alloc]init];
+    
+    if (self.player.playing) {
+        [self.player stop];
+    }
+    
+    if (!self.recorder.recording) {
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+        [session setActive:YES error:&error];
+        
+        [self.recorder record];
+        
+        
+    }
+    else {
+        
+        [self.stopButton setEnabled:YES];
+        [self.playButton setEnabled:NO];
+    }
 }
 
 - (IBAction)stopRecord:(UIButton *)sender {
+    
+    NSError *error = [[NSError alloc]init];
+    
+    [self.recorder stop];
+    
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setActive:NO error:&error];
+    
+    
+    
 }
 
 - (IBAction)playMemo:(UIButton *)sender {
+    
+    NSError *error = [[NSError alloc]init];
+    
+    if (!self.recorder.recording) {
+        self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:self.recorder.url error:&error];
+        self.player.delegate = self;
+        self.player.volume = 70;
+        
+        [self.player play];
+        
+    }
+    
+}
+
+
+- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag
+{
+    [self.stopButton setEnabled:YES];
+    [self.playButton setEnabled:YES];
 }
 @end
 
