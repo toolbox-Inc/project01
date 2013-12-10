@@ -7,16 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "Coordinates.h"
+#import "Proj01DetailViewController.h"
+
 
 @class Proj01DetailViewController;
 
-#import <CoreData/CoreData.h>
 
 @interface Proj01MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) Proj01DetailViewController *detailViewController;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end

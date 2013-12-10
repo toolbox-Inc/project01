@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2067E7C01855C101002B753E /* UtilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067E7BF1855C101002B753E /* UtilitiesViewController.m */; };
+		20A651EE1824139D0060973E /* Coordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A651ED1824139D0060973E /* Coordinates.m */; };
+		20AE197F182C429E00750092 /* target 29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE1979182C429E00750092 /* target 29x29.png */; };
+		20AE1980182C429E00750092 /* target 40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE197A182C429E00750092 /* target 40x40.png */; };
+		20AE1981182C429E00750092 /* target 58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE197B182C429E00750092 /* target 58x58.png */; };
+		20AE1982182C429E00750092 /* target 76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE197C182C429E00750092 /* target 76x76.png */; };
+		20AE1983182C429E00750092 /* target 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE197D182C429E00750092 /* target 80x80.png */; };
+		20AE1984182C429E00750092 /* target 152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE197E182C429E00750092 /* target 152x152.png */; };
+		20AE19881832223700750092 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE19871832223700750092 /* MapViewController.m */; };
+		20AE198A183226A100750092 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE1989183226A100750092 /* MapKit.framework */; };
+		20AE198C183226AE00750092 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE198B183226AE00750092 /* CoreLocation.framework */; };
+		20AE198F1832D0F900750092 /* Annotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE198E1832D0F900750092 /* Annotations.m */; };
 		20DF7A8E1823CA8A00889114 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DF7A8D1823CA8A00889114 /* Foundation.framework */; };
 		20DF7A901823CA8A00889114 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DF7A8F1823CA8A00889114 /* CoreGraphics.framework */; };
 		20DF7A921823CA8A00889114 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DF7A911823CA8A00889114 /* UIKit.framework */; };
@@ -39,6 +51,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2067E7BE1855C101002B753E /* UtilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilitiesViewController.h; sourceTree = "<group>"; };
+		2067E7BF1855C101002B753E /* UtilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilitiesViewController.m; sourceTree = "<group>"; };
+		20A651EC1824139D0060973E /* Coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coordinates.h; path = ../Coordinates.h; sourceTree = "<group>"; };
+		20A651ED1824139D0060973E /* Coordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Coordinates.m; path = ../Coordinates.m; sourceTree = "<group>"; };
+		20AE1978182C426500750092 /* target 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 120x120.png"; path = "../target 120x120.png"; sourceTree = "<group>"; };
+		20AE1979182C429E00750092 /* target 29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 29x29.png"; path = "../target 29x29.png"; sourceTree = "<group>"; };
+		20AE197A182C429E00750092 /* target 40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 40x40.png"; path = "../target 40x40.png"; sourceTree = "<group>"; };
+		20AE197B182C429E00750092 /* target 58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 58x58.png"; path = "../target 58x58.png"; sourceTree = "<group>"; };
+		20AE197C182C429E00750092 /* target 76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 76x76.png"; path = "../target 76x76.png"; sourceTree = "<group>"; };
+		20AE197D182C429E00750092 /* target 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 80x80.png"; path = "../target 80x80.png"; sourceTree = "<group>"; };
+		20AE197E182C429E00750092 /* target 152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 152x152.png"; path = "../target 152x152.png"; sourceTree = "<group>"; };
+		20AE19861832223700750092 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		20AE19871832223700750092 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		20AE1989183226A100750092 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		20AE198B183226AE00750092 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		20AE198D1832D0F900750092 /* Annotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotations.h; sourceTree = "<group>"; };
+		20AE198E1832D0F900750092 /* Annotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotations.m; sourceTree = "<group>"; };
 		20DF7A8A1823CA8A00889114 /* Proj.01.Ray.Amour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proj.01.Ray.Amour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DF7A8D1823CA8A00889114 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		20DF7A8F1823CA8A00889114 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AE198C183226AE00750092 /* CoreLocation.framework in Frameworks */,
+				20AE198A183226A100750092 /* MapKit.framework in Frameworks */,
 				20DF7A901823CA8A00889114 /* CoreGraphics.framework in Frameworks */,
 				20DF7A941823CA8A00889114 /* CoreData.framework in Frameworks */,
 				20DF7A921823CA8A00889114 /* UIKit.framework in Frameworks */,
@@ -91,6 +122,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200F097718391BAB00B79CEF /* CoreData FIles */ = {
+			isa = PBXGroup;
+			children = (
+				20A651EC1824139D0060973E /* Coordinates.h */,
+				20A651ED1824139D0060973E /* Coordinates.m */,
+			);
+			name = "CoreData FIles";
+			sourceTree = "<group>";
+		};
+		20AE1985182C431A00750092 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				20AE1978182C426500750092 /* target 120x120.png */,
+				20AE1979182C429E00750092 /* target 29x29.png */,
+				20AE197A182C429E00750092 /* target 40x40.png */,
+				20AE197B182C429E00750092 /* target 58x58.png */,
+				20AE197C182C429E00750092 /* target 76x76.png */,
+				20AE197D182C429E00750092 /* target 80x80.png */,
+				20AE197E182C429E00750092 /* target 152x152.png */,
+			);
+			name = "App Icons";
+			sourceTree = "<group>";
+		};
 		20DF7A811823CA8A00889114 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +167,8 @@
 		20DF7A8C1823CA8A00889114 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20AE198B183226AE00750092 /* CoreLocation.framework */,
+				20AE1989183226A100750092 /* MapKit.framework */,
 				20DF7A8D1823CA8A00889114 /* Foundation.framework */,
 				20DF7A8F1823CA8A00889114 /* CoreGraphics.framework */,
 				20DF7A911823CA8A00889114 /* UIKit.framework */,
@@ -125,6 +181,7 @@
 		20DF7A951823CA8A00889114 /* Proj.01.Ray.Amour */ = {
 			isa = PBXGroup;
 			children = (
+				200F097718391BAB00B79CEF /* CoreData FIles */,
 				20DF7A9E1823CA8A00889114 /* Proj01AppDelegate.h */,
 				20DF7A9F1823CA8A00889114 /* Proj01AppDelegate.m */,
 				20DF7AA11823CA8A00889114 /* Main_iPhone.storyboard */,
@@ -133,6 +190,12 @@
 				20DF7AAB1823CA8A00889114 /* Proj01MasterViewController.m */,
 				20DF7AAD1823CA8A00889114 /* Proj01DetailViewController.h */,
 				20DF7AAE1823CA8A00889114 /* Proj01DetailViewController.m */,
+				20AE19861832223700750092 /* MapViewController.h */,
+				20AE19871832223700750092 /* MapViewController.m */,
+				20AE198D1832D0F900750092 /* Annotations.h */,
+				20AE198E1832D0F900750092 /* Annotations.m */,
+				2067E7BE1855C101002B753E /* UtilitiesViewController.h */,
+				2067E7BF1855C101002B753E /* UtilitiesViewController.m */,
 				20DF7AB01823CA8A00889114 /* Images.xcassets */,
 				20DF7AA71823CA8A00889114 /* Proj_01_Ray_Amour.xcdatamodeld */,
 				20DF7A961823CA8A00889114 /* Supporting Files */,
@@ -143,6 +206,7 @@
 		20DF7A961823CA8A00889114 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				20AE1985182C431A00750092 /* App Icons */,
 				20DF7A971823CA8A00889114 /* Proj.01.Ray.Amour-Info.plist */,
 				20DF7A981823CA8A00889114 /* InfoPlist.strings */,
 				20DF7A9B1823CA8A00889114 /* main.m */,
@@ -246,8 +310,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AE197F182C429E00750092 /* target 29x29.png in Resources */,
+				20AE1982182C429E00750092 /* target 76x76.png in Resources */,
+				20AE1980182C429E00750092 /* target 40x40.png in Resources */,
 				20DF7AA61823CA8A00889114 /* Main_iPad.storyboard in Resources */,
+				20AE1984182C429E00750092 /* target 152x152.png in Resources */,
+				20AE1983182C429E00750092 /* target 80x80.png in Resources */,
 				20DF7AB11823CA8A00889114 /* Images.xcassets in Resources */,
+				20AE1981182C429E00750092 /* target 58x58.png in Resources */,
 				20DF7AA31823CA8A00889114 /* Main_iPhone.storyboard in Resources */,
 				20DF7A9A1823CA8A00889114 /* InfoPlist.strings in Resources */,
 			);
@@ -271,8 +341,12 @@
 				20DF7AA91823CA8A00889114 /* Proj_01_Ray_Amour.xcdatamodeld in Sources */,
 				20DF7AA01823CA8A00889114 /* Proj01AppDelegate.m in Sources */,
 				20DF7AAC1823CA8A00889114 /* Proj01MasterViewController.m in Sources */,
+				20A651EE1824139D0060973E /* Coordinates.m in Sources */,
+				2067E7C01855C101002B753E /* UtilitiesViewController.m in Sources */,
 				20DF7A9C1823CA8A00889114 /* main.m in Sources */,
 				20DF7AAF1823CA8A00889114 /* Proj01DetailViewController.m in Sources */,
+				20AE198F1832D0F900750092 /* Annotations.m in Sources */,
+				20AE19881832223700750092 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +481,6 @@
 		20DF7AC91823CA8A00889114 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Proj.01.Ray.Amour/Proj.01.Ray.Amour-Prefix.pch";
@@ -420,7 +493,6 @@
 		20DF7ACA1823CA8A00889114 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Proj.01.Ray.Amour/Proj.01.Ray.Amour-Prefix.pch";
@@ -491,6 +563,7 @@
 				20DF7ACA1823CA8A00889114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20DF7ACB1823CA8A00889114 /* Build configuration list for PBXNativeTarget "Proj.01.Ray.AmourTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +572,7 @@
 				20DF7ACD1823CA8A00889114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

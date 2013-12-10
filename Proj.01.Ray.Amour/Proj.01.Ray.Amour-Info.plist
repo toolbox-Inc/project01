@@ -8,6 +8,36 @@
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>target 58x58</string>
+				<string>target 80x80</string>
+				<string>target 120x120</string>
+				<string>target</string>
+			</array>
+		</dict>
+	</dict>
+	<key>CFBundleIcons~ipad</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>target 58x58</string>
+				<string>target 29x29</string>
+				<string>target 80x80</string>
+				<string>target 40x40</string>
+				<string>target 152x152</string>
+				<string>target 76x76</string>
+				<string>target 120x120</string>
+				<string>target</string>
+			</array>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>edu.umuc.cmis215.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
