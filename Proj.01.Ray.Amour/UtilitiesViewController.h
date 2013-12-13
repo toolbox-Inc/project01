@@ -12,18 +12,22 @@
 
 @interface UtilitiesViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVAudioRecorderDelegate, AVAudioPlayerDelegate>
 
+
+//camera properties
 @property (nonatomic, strong) UIImagePickerController *picker;
-
 @property (nonatomic, strong) UIImagePickerController *chooseExisting;
-
 @property (nonatomic, strong) UIImage *image;
 
 
 - (IBAction)camera:(UIButton *)sender;
+- (IBAction)chooseExisting:(UIButton *)sender;
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+
+
+//memo recording properties
 - (IBAction)recordMemo:(UIButton *)sender;
 - (IBAction)stopRecord:(UIButton *)sender;
 - (IBAction)playMemo:(UIButton *)sender;

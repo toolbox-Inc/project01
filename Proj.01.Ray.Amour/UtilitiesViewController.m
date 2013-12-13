@@ -24,12 +24,12 @@
 {
     [super viewDidLoad];
     [self setUpRecorder];
-    
-    
-    NSLog(@"latitude in utilities is %@",[self.detailItemUtilities valueForKey:@"latitude"]);
 	
     self.picker = [[UIImagePickerController alloc] init];
     [self.picker setDelegate:self];
+    
+    self.chooseExisting = [[UIImagePickerController alloc]init];
+    [self.chooseExisting setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,19 +48,22 @@
     
 }
 
+- (IBAction)chooseExisting:(UIButton *)sender {
+    
+    [self.chooseExisting setSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
+    [self presentViewController:self.chooseExisting animated:YES completion:NULL];
+    
+}
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     
     self.image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    NSData *dataObj = [[NSData alloc]init];
+    [self.imageView setImage:self.image];
     
-    dataObj = UIImagePNGRepresentation([info objectForKey:UIImagePickerControllerOriginalImage]);
-
-    [self.detailItemUtilities setValue:dataObj forKey:@"photo"];
+    UIImageWriteToSavedPhotosAlbum(self.image , nil, nil, nil);
     
-    
-    [self.imageView setImage:[UIImage imageWithData:[self.detailItemUtilities valueForKey:@"photo"]]];
     
     [self dismissViewControllerAnimated:YES completion:NULL];
     
@@ -69,7 +72,6 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissViewControllerAnimated:YES completion:NULL];
-    
     
 }
 
@@ -100,14 +102,14 @@
     
 }
 
-//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-//{
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if (self) {
-//        // Custom initialization
-//    }
-//    return self;
-//}
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 
 

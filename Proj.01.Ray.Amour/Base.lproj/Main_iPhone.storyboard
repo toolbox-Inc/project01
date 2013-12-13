@@ -289,7 +289,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fWu-cA-uFh">
-                                <rect key="frame" x="45" y="101" width="240" height="277"/>
+                                <rect key="frame" x="20" y="103" width="280" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-l0-gIj">
@@ -310,6 +310,16 @@
                                 </state>
                                 <connections>
                                     <action selector="playMemo:" destination="t9l-Px-RtU" eventType="touchUpInside" id="tqs-KQ-seW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQt-NS-ONA">
+                                <rect key="frame" x="177" y="72" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Choose Existing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseExisting:" destination="t9l-Px-RtU" eventType="touchUpInside" id="yXg-AS-jts"/>
                                 </connections>
                             </button>
                         </subviews>

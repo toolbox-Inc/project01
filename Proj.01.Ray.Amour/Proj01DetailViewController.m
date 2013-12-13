@@ -199,14 +199,11 @@ bool bolVar = YES;
         MapViewController *mapViewController = (MapViewController *)segue.destinationViewController;
         
         mapViewController.coordinatesObject = self.detailItem;
-        
-        NSLog(@"yes !!!!");
+
     }
     
     
     if([segue.identifier isEqualToString:@"toUtilities"]) {
-        
-        NSLog(@"yeah baby");
         
         UtilitiesViewController *utilitiesViewController = (UtilitiesViewController *)segue.destinationViewController;
         
