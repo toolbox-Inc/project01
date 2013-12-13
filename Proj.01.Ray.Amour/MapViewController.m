@@ -35,6 +35,7 @@
     [self startStandardUpdates];
     [self addAnnotation];
    
+    NSLog(@"latitude in map is %@", [self.coordinatesObject valueForKey:@"latitude"]);
     
     
 	// Do any additional setup after loading the view.

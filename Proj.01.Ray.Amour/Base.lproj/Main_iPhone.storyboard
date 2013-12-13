@@ -169,7 +169,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="t9l-Px-RtU" kind="push" identifier="Utilities" id="aMW-ap-Ik0"/>
+                                    <segue destination="t9l-Px-RtU" kind="push" identifier="toUtilities" id="aMW-ap-Ik0"/>
                                 </connections>
                             </button>
                         </barButtonItem>

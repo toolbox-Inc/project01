@@ -9,6 +9,7 @@
 #import "Proj01DetailViewController.h"
 #import "Coordinates.h"
 #import "MapViewController.h"
+#import "UtilitiesViewController.h"
 
 
 @interface Proj01DetailViewController ()
@@ -195,10 +196,22 @@ bool bolVar = YES;
 {
     if([segue.identifier isEqualToString:@"toMapSegue"]) {
         
-        //UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
         MapViewController *mapViewController = (MapViewController *)segue.destinationViewController;
         
         mapViewController.coordinatesObject = self.detailItem;
+        
+        NSLog(@"yes !!!!");
+    }
+    
+    
+    if([segue.identifier isEqualToString:@"toUtilities"]) {
+        
+        NSLog(@"yeah baby");
+        
+        UtilitiesViewController *utilitiesViewController = (UtilitiesViewController *)segue.destinationViewController;
+        
+        utilitiesViewController.detailItemUtilities = self.detailItem;
+        
     }
 }
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <CoreData/CoreData.h>
 
 @interface UtilitiesViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVAudioRecorderDelegate, AVAudioPlayerDelegate>
 
@@ -30,5 +31,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 
+@property (nonatomic, strong) NSManagedObject *detailItemUtilities;
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @end

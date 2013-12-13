@@ -10,7 +10,7 @@
 		2025035A185717A30085D04D /* voice-recorder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20250359185717A20085D04D /* voice-recorder.jpg */; };
 		2025035C185719C40085D04D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2025035B185719C40085D04D /* AVFoundation.framework */; };
 		2067E7C01855C101002B753E /* UtilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067E7BF1855C101002B753E /* UtilitiesViewController.m */; };
-		20A651EE1824139D0060973E /* Coordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A651ED1824139D0060973E /* Coordinates.m */; };
+		207D58371859AE4D00A91479 /* Coordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 207D58361859AE4D00A91479 /* Coordinates.m */; };
 		20AE197F182C429E00750092 /* target 29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE1979182C429E00750092 /* target 29x29.png */; };
 		20AE1980182C429E00750092 /* target 40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE197A182C429E00750092 /* target 40x40.png */; };
 		20AE1981182C429E00750092 /* target 58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AE197B182C429E00750092 /* target 58x58.png */; };
@@ -57,8 +57,8 @@
 		2025035B185719C40085D04D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2067E7BE1855C101002B753E /* UtilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilitiesViewController.h; sourceTree = "<group>"; };
 		2067E7BF1855C101002B753E /* UtilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilitiesViewController.m; sourceTree = "<group>"; };
-		20A651EC1824139D0060973E /* Coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coordinates.h; path = ../Coordinates.h; sourceTree = "<group>"; };
-		20A651ED1824139D0060973E /* Coordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Coordinates.m; path = ../Coordinates.m; sourceTree = "<group>"; };
+		207D58351859AE4D00A91479 /* Coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinates.h; sourceTree = "<group>"; };
+		207D58361859AE4D00A91479 /* Coordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coordinates.m; sourceTree = "<group>"; };
 		20AE1978182C426500750092 /* target 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 120x120.png"; path = "../target 120x120.png"; sourceTree = "<group>"; };
 		20AE1979182C429E00750092 /* target 29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 29x29.png"; path = "../target 29x29.png"; sourceTree = "<group>"; };
 		20AE197A182C429E00750092 /* target 40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target 40x40.png"; path = "../target 40x40.png"; sourceTree = "<group>"; };
@@ -130,8 +130,6 @@
 		200F097718391BAB00B79CEF /* CoreData FIles */ = {
 			isa = PBXGroup;
 			children = (
-				20A651EC1824139D0060973E /* Coordinates.h */,
-				20A651ED1824139D0060973E /* Coordinates.m */,
 			);
 			name = "CoreData FIles";
 			sourceTree = "<group>";
@@ -154,6 +152,8 @@
 		20DF7A811823CA8A00889114 = {
 			isa = PBXGroup;
 			children = (
+				207D58351859AE4D00A91479 /* Coordinates.h */,
+				207D58361859AE4D00A91479 /* Coordinates.m */,
 				20DF7A951823CA8A00889114 /* Proj.01.Ray.Amour */,
 				20DF7ABE1823CA8A00889114 /* Proj.01.Ray.AmourTests */,
 				20DF7A8C1823CA8A00889114 /* Frameworks */,
@@ -349,7 +349,7 @@
 				20DF7AA91823CA8A00889114 /* Proj_01_Ray_Amour.xcdatamodeld in Sources */,
 				20DF7AA01823CA8A00889114 /* Proj01AppDelegate.m in Sources */,
 				20DF7AAC1823CA8A00889114 /* Proj01MasterViewController.m in Sources */,
-				20A651EE1824139D0060973E /* Coordinates.m in Sources */,
+				207D58371859AE4D00A91479 /* Coordinates.m in Sources */,
 				2067E7C01855C101002B753E /* UtilitiesViewController.m in Sources */,
 				20DF7A9C1823CA8A00889114 /* main.m in Sources */,
 				20DF7AAF1823CA8A00889114 /* Proj01DetailViewController.m in Sources */,

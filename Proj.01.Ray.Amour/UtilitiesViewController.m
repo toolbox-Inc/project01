@@ -9,6 +9,7 @@
 #import "UtilitiesViewController.h"
 
 
+
 @interface UtilitiesViewController ()
 
 
@@ -23,6 +24,9 @@
 {
     [super viewDidLoad];
     [self setUpRecorder];
+    
+    
+    NSLog(@"latitude in utilities is %@",[self.detailItemUtilities valueForKey:@"latitude"]);
 	
     self.picker = [[UIImagePickerController alloc] init];
     [self.picker setDelegate:self];
@@ -44,18 +48,19 @@
     
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
     
     self.image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
     NSData *dataObj = [[NSData alloc]init];
     
     dataObj = UIImagePNGRepresentation([info objectForKey:UIImagePickerControllerOriginalImage]);
+
+    [self.detailItemUtilities setValue:dataObj forKey:@"photo"];
     
-    NSLog(@"%@",dataObj);
     
-    
-    [self.imageView setImage:[UIImage imageWithData:dataObj]];
+    [self.imageView setImage:[UIImage imageWithData:[self.detailItemUtilities valueForKey:@"photo"]]];
     
     [self dismissViewControllerAnimated:YES completion:NULL];
     
@@ -64,6 +69,8 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissViewControllerAnimated:YES completion:NULL];
+    
+    
 }
 
 
