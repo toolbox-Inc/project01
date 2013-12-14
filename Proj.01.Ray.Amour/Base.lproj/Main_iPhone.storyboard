@@ -157,22 +157,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="tTj-iP-Xbi">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ewW-VQ-a9Z">
-                                <rect key="frame" x="16" y="7" width="63" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bz-Wf-MLn">
+                                <rect key="frame" x="137" y="417" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Utilities">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="t9l-Px-RtU" kind="push" identifier="toUtilities" id="aMW-ap-Ik0"/>
+                                    <segue destination="t9l-Px-RtU" kind="push" id="a0S-o8-Z7q"/>
                                 </connections>
                             </button>
-                        </barButtonItem>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN">
                         <barButtonItem key="rightBarButtonItem" id="dhD-OU-1jn">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aB4-kT-h9h">
                                 <rect key="frame" x="252" y="7" width="52" height="30"/>
@@ -302,10 +300,10 @@
                                     <action selector="stopRecord:" destination="t9l-Px-RtU" eventType="touchUpInside" id="pgq-lF-Sjb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLi-3Z-elw">
-                                <rect key="frame" x="250" y="412" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aLi-3Z-elw">
+                                <rect key="frame" x="197" y="395" width="103" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play">
+                                <state key="normal" title="Play Last Recording">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

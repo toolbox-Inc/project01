@@ -20,6 +20,15 @@
 
 @implementation UtilitiesViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -38,13 +47,17 @@
 }
 
 
+#pragma mark Camera button and setUp methods
 
 - (IBAction)camera:(UIButton *)sender {
     
     
-    [self.picker setSourceType:UIImagePickerControllerSourceTypeCamera];
-    [self presentViewController:self.picker animated:YES completion:NULL];
+    if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceFront || UIImagePickerControllerCameraDeviceFront]) {
+        
+        [self.picker setSourceType:UIImagePickerControllerSourceTypeCamera];
+        [self presentViewController:self.picker animated:YES completion:NULL];
     
+        }
     
 }
 
@@ -65,21 +78,23 @@
     UIImageWriteToSavedPhotosAlbum(self.image , nil, nil, nil);
     
     
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
 
+#pragma mark Recorder and Player methods
+
 - (void)setUpRecorder
 {
     [self.stopButton setEnabled:NO];
-    [self.playButton setEnabled:NO];
+    //[self.playButton setEnabled:NO];
     
     NSArray *pathComponents = [NSArray arrayWithObjects:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject], @"MyAudioMemo.m4a", nil];
     
@@ -98,22 +113,9 @@
     self.recorder = [[AVAudioRecorder alloc]initWithURL:outputFile settings:recordSettings error:&error];
     self.recorder.delegate = self;
     self.recorder.meteringEnabled = YES;
-    [self.recorder prepareToRecord];
+    //[self.recorder prepareToRecord];
     
 }
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-
-
-
 
 
 - (IBAction)recordMemo:(UIButton *)sender {
